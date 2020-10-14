@@ -53,4 +53,4 @@ class Discriminator(nn.Module):
         h = self.conv4(h)
         h = torch.flatten(h, 1)
         h = self.output_layer(h)
-        return torch.sigmoid(h)
+        return h
